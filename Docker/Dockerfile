@@ -4,6 +4,10 @@ WORKDIR /apis
 
 COPY . /apis/
 
+# Ensure the paths are correct relative to WORKDIR
+COPY recommender/data/Crop_recommendation.csv recommender/data/Crop_recommendation.csv
+COPY recommender/models/ensemble_model.pkl recommender/models/ensemble_model.pkl
+
 COPY wait-for-it.sh /wait-for-it.sh
 
 RUN chmod +x /wait-for-it.sh

@@ -8,6 +8,8 @@ services:
       MYSQL_ROOT_PASSWORD: agri
     volumes:
       - mysql_data:/var/lib/mysql
+    networks:
+      - mynetwork
 
   web:
     build: .
@@ -15,9 +17,12 @@ services:
     volumes:
       - .:/apis
     ports:
-      - "8000:8000"
+      - "3306:3306"
     depends_on:
       - db
+    networks:
+      - mynetwork
 
-volumes:
-  mysql_data:
+networks:
+  mynetwork:
+    driver: bridge
