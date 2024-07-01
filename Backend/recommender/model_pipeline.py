@@ -8,17 +8,10 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-'''
 
-apis dir for docker containerization(WORKDIR /apis) 
-otherwise locally 
-remove the apis/ in the path 
-for MODEL_PATH & crop_data
+MODEL_PATH = r'recommender/models/ensemble_model.pkl'
 
-'''
-MODEL_PATH = r'apis\recommender\models\ensemble_model.pkl'
-
-crop_data = pd.read_csv(r'apis\recommender\data\Crop_recommendation.csv')
+crop_data = pd.read_csv(r'recommender/data/Crop_recommendation.csv')
 X = crop_data.drop(columns=['crop_label'])
 y = crop_data['crop_label']
 
