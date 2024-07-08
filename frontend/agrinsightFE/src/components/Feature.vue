@@ -1,14 +1,15 @@
 <template>
   <section class="bg-gray-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p class="text-indigo-500 font-semibold mb-2">Deploy faster</p>
+      <p class="text-indigo-500 font-semibold mb-2">Empower Your Farming</p>
       <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-        Everything you need to deploy your app
+        Innovative Solutions for Modern Agriculture
       </h2>
       <p class="text-lg max-w-3xl mx-auto mb-12">
-        Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-        Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In
-        mi viverra elit nunc.
+        Our platform provides advanced tools to enhance your farming efficiency
+        and productivity. From recommending the best crops to predicting yields
+        and offering the best farming practices, we help you make informed
+        decisions for better outcomes.
       </p>
     </div>
     <div
@@ -16,40 +17,46 @@
     >
       <div class="feature-card">
         <div class="flex items-center mb-4">
-          <i class="fas fa-cloud-upload-alt text-indigo-500 text-2xl"></i>
-          <h3 class="ml-2 text-lg font-semibold">Push to deploy</h3>
+          <i class="fas fa-seedling text-indigo-500 text-2xl"></i>
+          <h3 class="ml-2 text-lg font-semibold">Crop Recommender</h3>
         </div>
         <p class="text-gray-400 mb-4">
-          Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque
-          diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu.
-          Phasellus praesent ligula sit faucibus.
+          Our Crop Recommender uses advanced algorithms to suggest the best
+          crops to plant based on soil quality, weather patterns, and market
+          demand. Maximize your yield and profitability with tailored crop
+          recommendations.
         </p>
         <a href="#" class="text-indigo-500 hover:text-indigo-400"
           >Learn more &rarr;</a
         >
       </div>
+
       <div class="feature-card">
         <div class="flex items-center mb-4">
-          <i class="fas fa-lock text-indigo-500 text-2xl"></i>
-          <h3 class="ml-2 text-lg font-semibold">SSL certificates</h3>
+          <i class="fas fa-chart-line text-indigo-500 text-2xl"></i>
+          <h3 class="ml-2 text-lg font-semibold">Crop Yield Predictor</h3>
         </div>
         <p class="text-gray-400 mb-4">
-          Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis
-          donec placerat sapien consequat tempor fermentum nibh.
+          The Crop Yield Predictor leverages machine learning to analyze
+          historical data, weather forecasts, and soil conditions. Get accurate
+          predictions on your crop yields and plan your farming activities with
+          confidence.
         </p>
         <a href="#" class="text-indigo-500 hover:text-indigo-400"
           >Learn more &rarr;</a
         >
       </div>
+
       <div class="feature-card">
         <div class="flex items-center mb-4">
-          <i class="fas fa-sync-alt text-indigo-500 text-2xl"></i>
-          <h3 class="ml-2 text-lg font-semibold">Simple queues</h3>
+          <i class="fas fa-hand-holding-water text-indigo-500 text-2xl"></i>
+          <h3 class="ml-2 text-lg font-semibold">Best Farming Practices</h3>
         </div>
         <p class="text-gray-400 mb-4">
-          Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur
-          viverra suspendisse iaculis eget. Nec mollis placerat ultricies
-          euismod ut condimentum.
+          Discover the best farming practices to enhance your crop yield and
+          soil health. Our platform provides tips and techniques on irrigation,
+          fertilization, and pest management based on the latest agricultural
+          research.
         </p>
         <a href="#" class="text-indigo-500 hover:text-indigo-400"
           >Learn more &rarr;</a

@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import Signup from "../components/Signup.vue";
+import Footer from "../components/Footer.vue";
+</script>
 
 <template>
-  <main>Sign Up View</main>
+  <Signup />
+  <Footer />
 </template>
