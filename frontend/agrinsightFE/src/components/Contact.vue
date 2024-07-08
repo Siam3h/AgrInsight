@@ -176,7 +176,7 @@
           <SwitchLabel class="text-sm leading-6 text-gray-600">
             By selecting this, you agree to our
             {{ " " }}
-            <a href="#" class="font-semibold text-indigo-600"
+            <a href="#" class="font-semibold text-green-900"
               >privacy&nbsp;policy</a
             >.
           </SwitchLabel>
@@ -185,7 +185,7 @@
       <div class="mt-10">
         <button
           type="submit"
-          class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="block w-full rounded-md bg-green-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Let's talk
         </button>

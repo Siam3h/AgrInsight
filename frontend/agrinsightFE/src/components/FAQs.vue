@@ -3,7 +3,8 @@
     <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
     <p class="mb-6">
       If you have any other questions, please feel free to
-      <router-link to="/contact" class="text-blue-500">contact us</router-link>.
+      <router-link to="/contact" class="text-green-900">contact us</router-link
+      >.
     </p>
     <div class="border-t border-b divide-y">
       <div
