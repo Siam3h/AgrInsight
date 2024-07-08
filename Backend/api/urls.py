@@ -20,7 +20,7 @@ schema_view = get_schema_view(
         license=openapi.License(name="BSD License"),
     ),
     public=False,
-    permission_classes=[IsAuthenticated],
+    #permission_classes=[IsAuthenticated],
 )
 
     
@@ -29,7 +29,6 @@ urlpatterns = [
     path('api/v1/admin/', admin.site.urls),
     path('api/v1/accounts/', include('accounts.urls')),
     path('api/v1/crop/recommender/', include('recommender.urls')),
+    path('api/v1/crop/yield/', include('crop_yield.urls')),
     path('api/v1/docs/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('api/v1/docs/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-
 ]

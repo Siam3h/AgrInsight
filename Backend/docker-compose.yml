@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: os.getenv('DATABASE_NAME')
+      POSTGRES_USER: os.getenv('DATABASE_USER')
+      POSTGRES_PASSWORD: os.getenv('DATABASE_PASSWORD')
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
