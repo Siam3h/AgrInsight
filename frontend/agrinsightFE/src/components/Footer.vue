@@ -1,0 +1,128 @@
+<template>
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:space-y-0 md:justify-between">
+        <div class="flex flex-col items-center md:items-start">
+          <img
+            src="@/assets/images/black_logo.png"
+            alt="Logo"
+            class="h-20 mb-4"
+          />
+          <p class="text-center md:text-left">
+            Making the world a better place through constructing elegant
+            hierarchies.
+          </p>
+          <div class="mt-4 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="mt-8 md:mt-0 flex flex-col md:flex-row md:space-x-16 w-full md:w-auto"
+        >
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-bold mb-4">Solutions</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Marketing</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Analytics</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Commerce</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Insights</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-bold mb-4">Support</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Guides</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >API Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-8 md:mb-0">
+            <h4 class="font-bold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Jobs</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Press</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Partners</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Claim</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8"></div>
+      <div class="mt-4 text-center text-gray-500">
+        &copy; {{ currentYear }} Agricultural Insights, Inc. <br />
+        All rights reserved.
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script>
+export default {
+  name: "Footer",
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    };
+  },
+};
+</script>
