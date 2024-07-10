@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-green-10">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav
         class="flex items-center justify-between p-6 lg:px-8"
@@ -45,7 +45,7 @@
           class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
           <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Agri Insight Inc</span>
               <img
                 class="h-18 w-auto"
@@ -75,7 +75,7 @@
               </div>
               <div class="py-6">
                 <a
-                  href="#"
+                  href="/signin"
                   class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >Log in</a
                 >
@@ -121,7 +121,7 @@
             class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
           >
             Unlocking the Future of Agriculture.
-            <a href="#" class="font-semibold text-indigo-600"
+            <a href="#" class="font-semibold text-green-900"
               ><span class="absolute inset-0" aria-hidden="true" />Read more
               <span aria-hidden="true">&rarr;</span></a
             >
@@ -141,7 +141,7 @@
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              class="rounded-md bg-green-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >Get started</a
             >
             <a href="#" class="text-sm font-semibold leading-6 text-gray-900"

@@ -29,12 +29,16 @@
       />
     </div>
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        Contact sales
-      </h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        Aute magna irure deserunt veniam aliqua magna enim voluptate.
-      </p>
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Get in Touch with Our Team
+        </h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">
+          Have a question or need help? Our friendly sales team is here to
+          assist you. Whether you're curious about features, pricing, or just
+          want to chat about farming, we're all ears!
+        </p>
+      </div>
     </div>
     <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -116,6 +120,7 @@
                 name="country"
                 class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
               >
+                <option>KE</option>
                 <option>US</option>
                 <option>CA</option>
                 <option>EU</option>
@@ -171,7 +176,7 @@
           <SwitchLabel class="text-sm leading-6 text-gray-600">
             By selecting this, you agree to our
             {{ " " }}
-            <a href="#" class="font-semibold text-indigo-600"
+            <a href="#" class="font-semibold text-green-900"
               >privacy&nbsp;policy</a
             >.
           </SwitchLabel>
@@ -180,7 +185,7 @@
       <div class="mt-10">
         <button
           type="submit"
-          class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="block w-full rounded-md bg-green-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Let's talk
         </button>

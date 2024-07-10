@@ -1,15 +1,15 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup>
+import Footer from "../components/Footer.vue";
+import Video from "../components/Video.vue";
+import Contact from "../components/Contact.vue";
+import LogoClouds from "../components/LogoClouds.vue";
+import FAQs from "../components/FAQs.vue";
+</script>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<template>
+  <Video />
+  <FAQs />
+  <LogoClouds />
+  <Contact />
+  <Footer />
+</template>

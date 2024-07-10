@@ -9,8 +9,8 @@
             class="h-20 mb-4"
           />
           <p class="text-center md:text-left">
-            Making the world a better place through constructing elegant
-            hierarchies.
+            Making the world a better place by <br />
+            data-driven and precision Agriculture
           </p>
           <div class="mt-4 flex space-x-4">
             <a href="#" class="text-gray-400 hover:text-white"
@@ -37,16 +37,19 @@
             <h4 class="font-bold mb-4">Solutions</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Marketing</a>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Crop Recommender</a
+                >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Analytics</a>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Yield Predictor</a
+                >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Commerce</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white">Insights</a>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Best Practices</a
+                >
               </li>
             </ul>
           </div>
@@ -81,13 +84,10 @@
                 <a href="#" class="text-gray-400 hover:text-white">Blog</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Jobs</a>
+                <a href="#" class="text-gray-400 hover:text-white">Careers</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Press</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white">Partners</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -95,13 +95,14 @@
             <h4 class="font-bold mb-4">Legal</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Claim</a>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Privacy Policy</a
+                >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white">Terms</a>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Terms of Service</a
+                >
               </li>
             </ul>
           </div>
