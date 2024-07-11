@@ -6,11 +6,12 @@
         aria-label="Global"
       >
         <div class="flex lg:flex-1">
-          <a href="/" class="-m-1.5 p-1.5">
+          <a href="/" class="-m-1.5 p-1.5 flex items-center">
             <span
-              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-              >Agr<span class="font-bold">Insight Inc</span></span
+              class="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
             >
+              Agr<span class="font-bold sr-m">Insight Inc</span>
+            </span>
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -198,3 +199,11 @@ const navigation = [
 
 const mobileMenuOpen = ref(false);
 </script>
+
+<style scoped>
+.logo {
+  height: 80%;
+  width: auto;
+  max-height: 50px;
+}
+</style>

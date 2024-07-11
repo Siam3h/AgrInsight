@@ -1,0 +1,27 @@
+<template>
+  <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <p class="mb-2 font-semibold text-green-900 md:mb-3 lg:text-lg">
+        Introducing
+      </p>
+      <h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+        Revolutionary way to build the web
+      </h2>
+      <p class="max-w-screen-md text-gray-500 md:text-lg">
+        This is a section of some simple filler text, also known as placeholder
+        text. It shares some characteristics of a real written text but is
+        random or otherwise generated.
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "AboutIntroduction",
+};
+</script>
+
+<style scoped>
+/* Add any additional styles if needed */
+</style>
