@@ -6,8 +6,11 @@
         aria-label="Global"
       >
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Agri Insight Inc</span>
+          <a href="/" class="-m-1.5 p-1.5">
+            <span
+              class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+              >Agr<span class="font-bold">Insight Inc</span></span
+            >
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -30,7 +33,9 @@
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+          <a
+            href="/signin"
+            class="text-sm font-semibold leading-6 text-gray-900"
             >Log in <span aria-hidden="true">&rarr;</span></a
           >
         </div>
@@ -120,11 +125,7 @@
           <div
             class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
           >
-            Unlocking the Future of Agriculture.
-            <a href="#" class="font-semibold text-green-900"
-              ><span class="absolute inset-0" aria-hidden="true" />Read more
-              <span aria-hidden="true">&rarr;</span></a
-            >
+            <span>Unlocking the Future of Agriculture</span>
           </div>
         </div>
         <div class="text-center">
@@ -140,11 +141,13 @@
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="#"
+              href="/signup"
               class="rounded-md bg-green-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >Get started</a
             >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            <a
+              href="/about"
+              class="text-sm font-semibold leading-6 text-gray-900"
               >Learn more <span aria-hidden="true">→</span></a
             >
           </div>
@@ -189,8 +192,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Admin", href: "/admin" },
+  { name: "About", href: "/about" },
+  { name: "Features", href: "/features" },
 ];
 
 const mobileMenuOpen = ref(false);

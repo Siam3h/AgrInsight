@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap justify-between items-start p-5">
     <div class="w-full lg:w-1/2 mb-5 lg:mb-0">
-      <h2 class="text-indigo-600 text-lg font-semibold mb-2">
+      <h2 class="text-green-900 text-lg font-semibold mb-2">
         Enhance Your Farming
       </h2>
       <h1 class="text-3xl font-bold mb-4">Smart Agriculture Solutions</h1>
