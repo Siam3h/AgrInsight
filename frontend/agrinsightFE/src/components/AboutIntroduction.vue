@@ -7,7 +7,7 @@
       <h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
         Revolutionary way to build the web
       </h2>
-      <p class="max-w-screen-md text-gray-500 md:text-lg">
+      <p class="max-w-screen-md text-gray-500 md:text-lg text:jus">
         This is a section of some simple filler text, also known as placeholder
         text. It shares some characteristics of a real written text but is
         random or otherwise generated.

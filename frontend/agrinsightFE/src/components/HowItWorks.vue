@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white py-6 sm:py-8 lg:py-12">
-    <div class="mx-auto max-w-screen-lg px-4 md:px-8 text-justify">
+    <div class="mx-auto max-w-screen-lg px-4 md:px-8">
       <h2 class="mb-4 text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
         How It Works
       </h2>
