@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white py-12 sm:py-16 lg:py-20">
-    <div class="mx-auto max-w-screen-lg px-4 md:px-8">
+    <div class="mx-auto max-w-screen-lg px-4 md:px-8 text-justify">
       <p class="mb-4 font-semibold text-green-900 md:mb-6 lg:text-lg">
         Introducing Precision Farming
       </p>
