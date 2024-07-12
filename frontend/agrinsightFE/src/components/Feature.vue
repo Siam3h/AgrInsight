@@ -26,7 +26,9 @@
           demand. Maximize your yield and profitability with tailored crop
           recommendations.
         </p>
-        <a href="#" class="text-green-300 hover:text-green-200"
+        <a
+          href="/about/recommender/"
+          class="text-green-300 hover:text-green-200"
           >Learn more &rarr;</a
         >
       </div>
@@ -42,7 +44,7 @@
           predictions on your crop yields and plan your farming activities with
           confidence.
         </p>
-        <a href="#" class="text-green-300 hover:text-green-200"
+        <a href="/about/yield/" class="text-green-300 hover:text-green-200"
           >Learn more &rarr;</a
         >
       </div>
@@ -58,7 +60,7 @@
           fertilization, and pest management based on the latest agricultural
           research.
         </p>
-        <a href="#" class="text-green-300 hover:text-green-200"
+        <a href="/about/insights/" class="text-green-300 hover:text-green-200"
           >Learn more &rarr;</a
         >
       </div>

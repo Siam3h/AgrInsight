@@ -32,6 +32,29 @@
             class="text-sm font-semibold leading-6 text-gray-900"
             >{{ item.name }}</a
           >
+          <div class="relative" @mouseleave="dropdownOpen = false">
+            <button
+              @mouseenter="dropdownOpen = true"
+              @click="dropdownOpen = !dropdownOpen"
+              class="flex items-center text-sm font-semibold leading-6 text-gray-900"
+            >
+              Features
+              <ChevronDownIcon class="ml-1 h-5 w-5" aria-hidden="true" />
+            </button>
+            <div
+              v-if="dropdownOpen"
+              class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+            >
+              <a
+                v-for="feature in features"
+                :key="feature.name"
+                :href="feature.href"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                @click="dropdownOpen = false"
+                >{{ feature.name }}</a
+              >
+            </div>
+          </div>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
@@ -78,6 +101,28 @@
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >{{ item.name }}</a
                 >
+                <div class="relative">
+                  <button
+                    @click="mobileDropdownOpen = !mobileDropdownOpen"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Features
+                    <ChevronDownIcon class="ml-1 h-5 w-5" aria-hidden="true" />
+                  </button>
+                  <div
+                    v-if="mobileDropdownOpen"
+                    class="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                  >
+                    <a
+                      v-for="feature in features"
+                      :key="feature.name"
+                      :href="feature.href"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      @click="mobileDropdownOpen = false"
+                      >{{ feature.name }}</a
+                    >
+                  </div>
+                </div>
               </div>
               <div class="py-6">
                 <a
@@ -189,15 +234,26 @@
 <script setup>
 import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  ChevronDownIcon,
+} from "@heroicons/vue/24/outline";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Features", href: "/features" },
+];
+
+const features = [
+  { name: "Crop Recommendation", href: "/about/recommender/" },
+  { name: "Crop Yield", href: "/about/yield/" },
+  { name: "Farming Practices", href: "/about/insights/" },
 ];
 
 const mobileMenuOpen = ref(false);
+const dropdownOpen = ref(false);
+const mobileDropdownOpen = ref(false);
 </script>
 
 <style scoped>
