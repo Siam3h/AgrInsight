@@ -39,7 +39,7 @@
               class="flex items-center text-sm font-semibold leading-6 text-gray-900"
             >
               Features
-              <ChevronDownIcon class="ml-1 h-5 w-5" aria-hidden="true" />
+              <ChevronDownIcon class="ml-1 h-5 w-2" aria-hidden="true" />
             </button>
             <div
               v-if="dropdownOpen"

@@ -37,17 +37,21 @@
             <h4 class="font-bold mb-4">Solutions</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a
+                  href="/about/recommender/"
+                  class="text-gray-400 hover:text-white"
                   >Crop Recommender</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a href="/about/yield/" class="text-gray-400 hover:text-white"
                   >Yield Predictor</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a
+                  href="/about/insights/"
+                  class="text-gray-400 hover:text-white"
                   >Best Practices</a
                 >
               </li>
@@ -57,18 +61,14 @@
             <h4 class="font-bold mb-4">Support</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Pricing</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a href="/documentation/" class="text-gray-400 hover:text-white"
                   >Documentation</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Guides</a>
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a
+                  href="/api/documentation/"
+                  class="text-gray-400 hover:text-white"
                   >API Status</a
                 >
               </li>
@@ -78,16 +78,22 @@
             <h4 class="font-bold mb-4">Company</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">About</a>
+                <a href="/about/" class="text-gray-400 hover:text-white"
+                  >About</a
+                >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+                <a href="/blog" class="text-gray-400 hover:text-white">Blog</a>
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+                <a href="/careers/" class="text-gray-400 hover:text-white"
+                  >Careers</a
+                >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+                <a href="/contact/" class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -95,12 +101,14 @@
             <h4 class="font-bold mb-4">Legal</h4>
             <ul class="space-y-2">
               <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a
+                  href="/privacy-policy/"
+                  class="text-gray-400 hover:text-white"
                   >Privacy Policy</a
                 >
               </li>
               <li>
-                <a href="#" class="text-gray-400 hover:text-white"
+                <a href="/terms/" class="text-gray-400 hover:text-white"
                   >Terms of Service</a
                 >
               </li>
