@@ -66,7 +66,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          AgrInsight Crop Yield Predictor
+          AgrInsight Crop Recommender
         </h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
           Our platform provides advanced tools to enhance farming efficiency and
@@ -75,6 +75,7 @@
           informed decisions for better outcomes.
         </p>
       </div>
+
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
         <div
           class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10"
@@ -105,15 +106,15 @@
 <script setup>
 const links = [
   { name: "Try It Out!", href: "/signin" },
-  { name: "Check Recommended Crop!", href: "/about/recommender/" },
   { name: "Check Follow Up Insights!", href: "/about/insights/" },
+  { name: "Check Predicted Crop Yield!", href: "/about/yield/" },
   { name: "Privacy Policy", href: "/privacy-policy/" },
   { name: "Terms of Service", href: "/terms/" },
 ];
 const stats = [
   { name: "Offices counrtywide", value: "2" },
   { name: "Onboarded Users", value: "300+" },
-  { name: "Harvested Yield", value: "40 t" },
+  { name: "Success Rate", value: "98.99%" },
   { name: "Yield Revenue Generated", value: "2m+" },
 ];
 </script>

@@ -25,12 +25,12 @@ const router = createRouter({
       component: () => import("../views/SignInView.vue"),
     },
     {
-      path: "/about/recommender",
+      path: "/about/recommender/",
       name: "aboutRecommender",
       component: () => import("../views/AboutRecommenderView.vue"),
     },
     {
-      path: "/about/yield",
+      path: "/about/yield/",
       name: "aboutYield",
       component: () => import("../views/AboutYieldView.vue"),
     },
