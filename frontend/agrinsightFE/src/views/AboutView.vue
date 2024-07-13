@@ -9,6 +9,9 @@
     <div class="border-t border-gray-300"></div>
     <Contact />
     <Footer />
+    <a href="/about/recommender">Recommender</a>
+    <a href="/about/yield">Recommender</a>
+    <a href="/about/insights">Recommender</a>
   </div>
 </template>
 
