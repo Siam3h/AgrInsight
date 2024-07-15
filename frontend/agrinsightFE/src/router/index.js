@@ -70,6 +70,26 @@ const router = createRouter({
       name: "Chat",
       component: () => import("../components/AdminChat.vue"),
     },
+    {
+      path: "/privacy-policy/",
+      name: "PrivacyPolicy",
+      component: () => import("../views/PrivacyPolicyView.vue"),
+    },
+    {
+      path: "/terms-of-service/",
+      name: "TermsOfService",
+      component: () => import("../views/TermsView.vue"),
+    },
+    {
+      path: "/404/",
+      name: "404",
+      component: () => import("../components/404.vue"),
+    },
+    {
+      path: "/contact/",
+      name: "contact",
+      component: () => import("../components/Contact.vue"),
+    },
   ],
 });
 

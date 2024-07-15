@@ -61,14 +61,12 @@
             <h4 class="font-bold mb-4">Support</h4>
             <ul class="space-y-2">
               <li>
-                <a href="/documentation/" class="text-gray-400 hover:text-white"
+                <a href="/404/" class="text-gray-400 hover:text-white"
                   >Documentation</a
                 >
               </li>
               <li>
-                <a
-                  href="/api/documentation/"
-                  class="text-gray-400 hover:text-white"
+                <a href="/404/" class="text-gray-400 hover:text-white"
                   >API Status</a
                 >
               </li>
@@ -83,10 +81,10 @@
                 >
               </li>
               <li>
-                <a href="/blog" class="text-gray-400 hover:text-white">Blog</a>
+                <a href="/404" class="text-gray-400 hover:text-white">Blog</a>
               </li>
               <li>
-                <a href="/careers/" class="text-gray-400 hover:text-white"
+                <a href="/404/" class="text-gray-400 hover:text-white"
                   >Careers</a
                 >
               </li>
@@ -108,7 +106,9 @@
                 >
               </li>
               <li>
-                <a href="/terms/" class="text-gray-400 hover:text-white"
+                <a
+                  href="/terms-of-service/"
+                  class="text-gray-400 hover:text-white"
                   >Terms of Service</a
                 >
               </li>
