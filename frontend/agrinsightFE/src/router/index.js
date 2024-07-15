@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import AdminView from "../views/AdminView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,8 +42,33 @@ const router = createRouter({
     },
     {
       path: "/admin",
-      name: "admin",
-      component: () => import("../views/AdminView.vue"),
+      name: "AdminView",
+      component: AdminView,
+    },
+    {
+      path: "/admin/crop-recommendations",
+      name: "CropRecommendations",
+      component: () => import("../components/AdminCropRecommender.vue"),
+    },
+    {
+      path: "/admin/yield-predictions",
+      name: "YieldPredictions",
+      component: () => import("../components/AdminCopYieldPredictor.vue"),
+    },
+    {
+      path: "/admin/farming-practices",
+      name: "FarmingPractices",
+      component: () => import("../components/AdminInsights.vue"),
+    },
+    {
+      path: "/admin/market-insights",
+      name: "MarketInsights",
+      component: () => import("../components/AdminMarketInsights.vue"),
+    },
+    {
+      path: "/admin/chat",
+      name: "Chat",
+      component: () => import("../components/AdminChat.vue"),
     },
   ],
 });
