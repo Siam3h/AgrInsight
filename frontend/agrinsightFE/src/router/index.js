@@ -86,6 +86,11 @@ const router = createRouter({
       component: () => import("../components/404.vue"),
     },
     {
+      path: "/soon/",
+      name: "Soon",
+      component: () => import("../components/ComingSoon.vue"),
+    },
+    {
       path: "/contact/",
       name: "contact",
       component: () => import("../components/Contact.vue"),
