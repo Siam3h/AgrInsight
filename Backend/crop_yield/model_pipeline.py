@@ -22,18 +22,18 @@ class CropYieldModel:
         df_rain['average_rain_fall_mm_per_year'] = pd.to_numeric(df_rain['average_rain_fall_mm_per_year'], errors='coerce')
         df_rain = df_rain.dropna()
         
-        df_main = pd.merge(df_yield, df_rain, on=['Year','Area'], how='outer')
+        df_main = pd.merge(df_yield, df_rain, on=['year','area'], how='outer')
         
         dataframe_pesticide = pd.read_csv(r'crop_yield/data/pesticides.csv')
         dataframe_pesticide.rename(columns={"Value": "pesticides_tonnes"}, inplace=True)
         dataframe_pesticide = dataframe_pesticide.drop(['Element','Domain','Unit','Item'], axis=1)
         
-        df_main = pd.merge(df_main, dataframe_pesticide, on=['Year','Area'])
+        df_main = pd.merge(df_main, dataframe_pesticide, on=['year','area'])
         
         dataframe_temp = pd.read_csv(r'crop_yield/data/temp.csv')
-        dataframe_temp.rename(columns={"year": "Year", "country": 'Area'}, inplace=True)
+        dataframe_temp.rename(columns={"year": "year", "country": 'area'}, inplace=True)
         
-        self.df_main = pd.merge(df_main, dataframe_temp, on=['Year','Area'])
+        self.df_main = pd.merge(df_main, dataframe_temp, on=['year','area'])
 
     def train_model(self):
         df_main = self.df_main.dropna()
@@ -42,7 +42,7 @@ class CropYieldModel:
         y = df_main['hg/ha_yield']
         
         numeric_features = ['average_rain_fall_mm_per_year', 'pesticides_tonnes', 'avg_temp']
-        categorical_features = ['Year', 'Area']
+        categorical_features = ['year', 'area']
 
         numeric_transformer = Pipeline(steps=[
             ('scaler', MinMaxScaler())])
