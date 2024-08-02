@@ -4,11 +4,11 @@
       <h2 class="text-2xl font-bold mb-6 text-center">Sign In</h2>
       <form @submit.prevent="handleSignIn">
         <div class="mb-4">
-          <label for="email" class="block text-gray-700 mb-2">Email</label>
+          <label for="email" class="block text-gray-700 mb-2">Username</label>
           <input
-            v-model="email"
-            type="email"
-            id="email"
+            v-model="username"
+            type="username"
+            id="username"
             class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-indigo-500"
             required
           />
@@ -72,33 +72,38 @@
 </template>
 
 <script>
+import axios from "../axios";
+
 export default {
   data() {
     return {
-      email: "",
+      username: "",
       password: "",
       rememberMe: false,
     };
   },
   methods: {
-    handleSignIn() {
-      // Handle the sign-in process
-      console.log("Sign-In Attempt", {
-        email: this.email,
-        password: this.password,
-        rememberMe: this.rememberMe,
-      });
-      // Add your sign-in logic here
+    async handleSignIn() {
+      try {
+        const response = await axios.post(
+          "http://127.0.0.1:8000/api/v1/accounts/auth/login/",
+          {
+            username: this.username,
+            password: this.password,
+          }
+        );
+        localStorage.setItem("token", response.data.token);
+        // Redirect to the desired page after login
+        this.$router.push("/admin");
+      } catch (error) {
+        console.error("Login error:", error.response.data);
+      }
     },
     handleGmailSignIn() {
       // Handle Gmail sign-in process
-      console.log("Gmail Sign-In Attempt");
-      // Add your Gmail sign-in logic here
     },
     handleFacebookSignIn() {
       // Handle Facebook sign-in process
-      console.log("Facebook Sign-In Attempt");
-      // Add your Facebook sign-in logic here
     },
   },
 };

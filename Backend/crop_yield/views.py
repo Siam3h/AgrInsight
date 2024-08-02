@@ -9,7 +9,10 @@ import seaborn as sns
 import io
 import base64
 from django.http import HttpResponse
+import matplotlib
 
+
+matplotlib.use('Agg')
 crop_yield_model = CropYieldModel()
 
 class PredictYield(APIView):

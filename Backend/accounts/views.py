@@ -14,39 +14,6 @@ CustomUser = get_user_model()
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def signup(request):
-    """
-    Register a new user with the provided user data.
-
-    This endpoint allows any user (unauthenticated) to register with the system
-    by providing required user data. Upon successful registration, a token is generated
-    for the user to authenticate future requests.
-
-    Example request data:
-    {
-        "username": "new_user",
-        "email": "new_user@example.com",
-        "password": "my_secure_password"
-    }
-
-    Parameters:
-    param1 -- A first parameter
-    - request (HttpRequest): The HTTP request object containing user registration data.
-
-    Returns:
-    Response: A JSON response containing the authentication token and user data upon successful registration.
-        Example response:
-        {
-            "token": "eyJhbGciOiAiSFMyNTYiLCAidHlwIj...",
-            "user": {
-                "id": 1,
-                "username": "new_user",
-                "email": "new_user@example.com"
-            }
-        }
-
-    Raises:
-    - HTTP_400_BAD_REQUEST: If the provided data is invalid or registration fails for any reason.
-    """
     serializer = UserSerializer(data=request.data)
     if serializer.is_valid():
         user = serializer.save()
@@ -59,39 +26,7 @@ def signup(request):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login(request):
-    """
-    Log in a user and return an authentication token.
-
-    This endpoint verifies the provided username and password, generates
-    an authentication token if the credentials are valid, and returns the
-    token along with the user details.
-
-    Example input:
-    {
-        "username": "example_user",
-        "password": "example_password"
-    }
-
-    Responses:
-    - 200 OK: Successful login.
-        {
-            "token": "auth_token",
-            "user": {
-                "id": 1,
-                "username": "example_user",
-                "email": "example_user@example.com"
-                # Add any other user fields here as per your serializer
-            }
-        }
-    - 400 Bad Request: Missing username or password.
-        {
-            "error": "Both username and password are required"
-        }
-    - 404 Not Found: Invalid credentials.
-        {
-            "error": "Invalid credentials"
-        }
-    """
+    
     username = request.data.get('username')
     password = request.data.get('password')
 
@@ -111,23 +46,6 @@ def login(request):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def logout(request):
-    """
-    Logout the authenticated user by deleting their authentication token.
-
-    This endpoint invalidates the current user's authentication token, effectively
-    logging them out of the system.
-
-    Example:
-    {
-        "message": "Successfully logged out."
-    }
-
-    Parameters:
-    - request (HttpRequest): The HTTP request object containing the authenticated user.
-
-    Returns:
-    Response: A Response object indicating successful logout with status code 200 (OK).
-    """
     request.user.auth_token.delete()
     return Response({"message": "Successfully logged out."}, status=status.HTTP_200_OK)
 
