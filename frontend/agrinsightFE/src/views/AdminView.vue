@@ -1,73 +1,96 @@
 <template>
-  <div class="min-h-screen flex flex-col dark:bg-gray-900 dark:text-white">
-    <header
-      class="bg-green-600 dark:bg-green-800 text-white p-4 flex justify-between items-center"
-    >
-      <h1 class="text-xl font-bold">Agri-Tech Admin Dashboard</h1>
-      <DarkModeToggle />
-    </header>
-    <div class="flex flex-1">
-      <aside class="w-64 bg-gray-100 dark:bg-gray-800 p-4">
-        <nav>
-          <ul>
-            <li class="mb-4">
-              <router-link
-                to="admin/crop-recommendations"
-                class="block p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
-                >Crop Recommendations</router-link
-              >
-            </li>
-            <li class="mb-4">
-              <router-link
-                to="/admin/yield-predictions"
-                class="block p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
-                >Yield Predictions</router-link
-              >
-            </li>
-            <li class="mb-4">
-              <router-link
-                to="/admin/farming-practices"
-                class="block p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
-                >Farming Practices</router-link
-              >
-            </li>
-            <li class="mb-4">
-              <router-link
-                to="/admin/market-insights"
-                class="block p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
-                >Market Insights</router-link
-              >
-            </li>
-            <li class="mb-4">
-              <router-link
-                to="/admin/chat"
-                class="block p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
-                >Chat</router-link
-              >
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <main class="flex-1 p-6">
-        <router-view></router-view>
-      </main>
-    </div>
+  <div class="flex">
+    <Sidebar />
+
+    <main class="flex-1 p-6 bg-gray-100">
+      <Header />
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="md:col-span-2">
+          <img
+            src="@/assets/images/black_logo.png"
+            alt="Banner"
+            class="rounded-lg shadow"
+          />
+        </div>
+        <StatusCard />
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <ActivityChart />
+        <ServiceActivity />
+        <RecentActivity />
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Top Sellers</h2>
+          <SellerCard
+            v-for="seller in topSellers"
+            :key="seller.id"
+            :seller="seller"
+          />
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Recent Transactions</h2>
+          <TransactionCard
+            v-for="transaction in recentTransactions"
+            :key="transaction.id"
+            :transaction="transaction"
+          />
+        </div>
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
-import DarkModeToggle from "../components/DarkModeToggle.vue";
+import Sidebar from "@/components/admin/SideBar.vue";
+import Header from "@/components/admin/Header.vue";
+import StatusCard from "@/components/admin/StatusCard.vue";
+import ActivityChart from "@/components/admin/ActivityChart.vue";
+import ServiceActivity from "@/components/admin/ServiceActivity.vue";
+import SellerCard from "@/components/admin/SellerCard.vue";
+import TransactionCard from "@/components/admin/TransactionCard.vue";
+import RecentActivity from "@/components/admin/RecentActivity.vue";
 
 export default {
-  name: "AdminView",
   components: {
-    DarkModeToggle,
+    Sidebar,
+    Header,
+    StatusCard,
+    ActivityChart,
+    ServiceActivity,
+    SellerCard,
+    TransactionCard,
+    RecentActivity,
+  },
+  data() {
+    return {
+      topSellers: [
+        {
+          id: 1,
+          name: "John Doe",
+          sales: 1542,
+          avatar: "@/assets/images/black_logo.png",
+        },
+        {
+          id: 2,
+          name: "Jane Smith",
+          sales: 1300,
+          avatar: "@/assets/images/black_logo.png",
+        },
+      ],
+      recentTransactions: [
+        { id: 1, name: "Order #1234", amount: "$230.00", date: "2024-08-16" },
+        { id: 2, name: "Order #1235", amount: "$120.00", date: "2024-08-16" },
+      ],
+    };
   },
 };
 </script>
 
 <style scoped>
-body {
-  @apply dark:bg-gray-900 dark:text-white;
-}
+/* Additional styling here */
 </style>

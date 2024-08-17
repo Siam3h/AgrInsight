@@ -5,7 +5,7 @@
       Use machine learning algorithms to recommend the best crops to plant based
       on soil quality, weather patterns, and market demand.
     </p>
-    <!-- Add more content and functionalities here -->
+    Add more content and functionalities here
   </div>
 </template>
 

@@ -92,7 +92,7 @@
               >
                 I agree to the
                 <a
-                  href="#"
+                  href="/terms-of-service/"
                   class="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
                 >
                   Terms and Conditions
