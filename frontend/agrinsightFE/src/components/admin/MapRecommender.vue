@@ -1,5 +1,8 @@
 <template>
-  <div id="map" class="w-full h-full"></div>
+  <div>
+    <h2 class="text-xl font-semibold">Recommended Crop & Yield</h2>
+    <div id="map" class="w-full h-full map-container"></div>
+  </div>
 </template>
 
 <script>
@@ -162,7 +165,10 @@ export default {
 
 <style scoped>
 #map {
-  height: 450px; /* Set a fixed height for the map */
-  width: 100%; /* Ensure the map takes up full width */
+  height: 450px;
+  width: 100%;
+  border: 2px solid #ccc; /* Adds a light gray border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border-radius: 8px; /* Optional: Adds rounded corners */
 }
 </style>
