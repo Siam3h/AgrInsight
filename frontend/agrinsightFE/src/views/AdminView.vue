@@ -1,47 +1,45 @@
 <template>
-  <div class="flex">
-    <Sidebar />
+  <div>
+    <div class="flex">
+      <Sidebar />
 
-    <main class="flex-1 p-6 bg-gray-100">
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <div class="md:col-span-2">
-          <img
-            src="@/assets/images/black_logo.png"
-            alt="Banner"
-            class="rounded-lg shadow"
-          />
-        </div>
-        <StatusCard />
-      </section>
+      <main class="flex-1 p-6 bg-gray-100">
+        <section
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6"
+        >
+          <MapRecommender className="sm:col-span-2 lg:col-span-1" />
+          <StatusCard className="sm:col-span-1 lg:col-span-1" />
+        </section>
 
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <ActivityChart />
-        <ServiceActivity />
-        <RecentActivity />
-      </section>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ActivityChart />
+          <ServiceActivity />
+          <RecentActivity />
+        </section>
 
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-        <div>
-          <h2 class="text-xl font-semibold mb-4">Top Sellers</h2>
-          <SellerCard
-            v-for="seller in topSellers"
-            :key="seller.id"
-            :seller="seller"
-          />
-        </div>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Top Sellers</h2>
+            <SellerCard
+              v-for="seller in topSellers"
+              :key="seller.id"
+              :seller="seller"
+            />
+          </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-4">Recent Transactions</h2>
-          <TransactionCard
-            v-for="transaction in recentTransactions"
-            :key="transaction.id"
-            :transaction="transaction"
-          />
-        </div>
-      </section>
-    </main>
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Recent Transactions</h2>
+            <TransactionCard
+              v-for="transaction in recentTransactions"
+              :key="transaction.id"
+              :transaction="transaction"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <script>
@@ -54,6 +52,7 @@ import ServiceActivity from "@/components/admin/ServiceActivity.vue";
 import SellerCard from "@/components/admin/SellerCard.vue";
 import TransactionCard from "@/components/admin/TransactionCard.vue";
 import RecentActivity from "@/components/admin/RecentActivity.vue";
+import MapRecommender from "@/components/admin/MapRecommender.vue";
 
 export default {
   components: {
@@ -66,6 +65,7 @@ export default {
     TransactionCard,
     RecentActivity,
     Footer,
+    MapRecommender,
   },
   data() {
     return {
