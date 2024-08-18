@@ -3,8 +3,6 @@
     <Sidebar />
 
     <main class="flex-1 p-6 bg-gray-100">
-      <Header />
-
       <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div class="md:col-span-2">
           <img
@@ -43,9 +41,11 @@
       </section>
     </main>
   </div>
+  <Footer />
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
 import Sidebar from "@/components/admin/SideBar.vue";
 import Header from "@/components/admin/Header.vue";
 import StatusCard from "@/components/admin/StatusCard.vue";
@@ -65,6 +65,7 @@ export default {
     SellerCard,
     TransactionCard,
     RecentActivity,
+    Footer,
   },
   data() {
     return {
@@ -73,13 +74,13 @@ export default {
           id: 1,
           name: "John Doe",
           sales: 1542,
-          avatar: "@/assets/images/black_logo.png",
+          avatar: "@/assets/images/logo.png",
         },
         {
           id: 2,
           name: "Jane Smith",
           sales: 1300,
-          avatar: "@/assets/images/black_logo.png",
+          avatar: "@/assets/images/logo.png",
         },
       ],
       recentTransactions: [

@@ -4,7 +4,7 @@
     <ul>
       <li v-for="activity in activities" :key="activity.name" class="mb-2">
         <div class="flex items-center">
-          <activity.icon class="h-6 w-6 text-green-700 mr-2" />
+          <component :is="activity.icon" class="h-6 w-6 text-green-700 mr-2" />
           <span>{{ activity.name }}</span>
         </div>
         <p class="text-sm text-gray-500">{{ activity.time }}</p>
