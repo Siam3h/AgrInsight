@@ -17,10 +17,11 @@
           <RecentActivity />
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 pt-6">
           <div>
             <h2 class="text-xl font-semibold mb-4">Top Sellers</h2>
             <SellerCard
+              class="mt-6"
               v-for="seller in topSellers"
               :key="seller.id"
               :seller="seller"
